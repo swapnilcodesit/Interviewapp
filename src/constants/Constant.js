@@ -9,7 +9,17 @@ export const javascriptQuestions =[
     {
         question : "What is prototype , classes and constructor",
         content : <Content text={"some info"}/>,
-        id : 1
+        id : 14
+    },
+    {
+        question : "Call by value and call by reference",
+        content : <Content text={"some info"}/>,
+        id : 15
+    },
+     {
+        question : "Type coersion and type conversion",
+        content : <Content text={"some info"}/>,
+        id : 16
     },
     {
         question : "What is callback and callback hell?",
@@ -122,6 +132,11 @@ export const reactjsQuestions =[
         question : "React redux",
         content : <Content text={"some info"}/>,
         id : 10
+    },
+    {
+        question : "React router",
+        content : <Content text={"some info"}/>,
+        id : 12
     },
     
 ]
