@@ -37,6 +37,20 @@
   }
 }
 
-.some-class{
+.summary-wrapper{
 border-bottom:  1px solid gray;
+}
+.summary-wrapper span.titles {
+font-size: 17px;
+font-weight: 500;
+}
+.questions {
+  padding: 20px;
+}
+
+.questions .title{
+ color : cadetblue;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: 700;
 }

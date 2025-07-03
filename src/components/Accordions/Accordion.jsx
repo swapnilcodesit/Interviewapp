@@ -11,13 +11,13 @@ export default function Accordions({ acc, child, id }) {
   return (
     <div>
       <Accordion>
-        <div className="some-class">
+        <div className="summary-wrapper">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls={id}
             id={id}
           >
-            <Typography component="span">{acc}</Typography>
+            <Typography component="span"><span className="titles">{acc}</span></Typography>
           </AccordionSummary>
         </div>
         <AccordionDetails>{child}</AccordionDetails>
