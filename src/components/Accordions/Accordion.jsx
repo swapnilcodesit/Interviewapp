@@ -7,9 +7,9 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 
-export default function Accordions({ acc, child, id }) {
+export default function Accordions({ acc, child, id , index }) {
   return (
-    <div>
+    <div key={id} className="accordion-wrapper">
       <Accordion>
         <div className="summary-wrapper">
           <AccordionSummary
@@ -17,7 +17,7 @@ export default function Accordions({ acc, child, id }) {
             aria-controls={id}
             id={id}
           >
-            <Typography component="span"><span className="titles">{acc}</span></Typography>
+            <Typography component="span"><span className="titles"><span>{`${index+1})`}</span> {acc}</span></Typography>
           </AccordionSummary>
         </div>
         <AccordionDetails>{child}</AccordionDetails>

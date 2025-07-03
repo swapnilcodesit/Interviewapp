@@ -6,8 +6,8 @@ const Javascript = () => {
   return (
     <div className="questions">
       <div className="title">Javascript questions</div>
-      {javascriptQuestions?.map(({ question, content, id }) => (
-        <Accordions id={`content-${id}`} child={content} acc={question} />
+      {javascriptQuestions?.map(({ question, content, id } , idx) => (
+        <Accordions id={`content-${id}`} child={content} acc={question} index={idx} />
       ))}
     </div>
   );

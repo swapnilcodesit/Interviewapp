@@ -6,8 +6,8 @@ const ReactQuestions = () => {
   return (
     <div className="questions">
       <div className="title">React js questions</div>
-      {reactjsQuestions?.map(({ question, content, id }) => (
-        <Accordions id={`content-${id}`} child={content} acc={question} />
+      {reactjsQuestions?.map(({ question, content, id } , idx) => (
+        <Accordions id={`content-${id}`} child={content} acc={question} index={idx}/>
       ))}
     </div>
   );

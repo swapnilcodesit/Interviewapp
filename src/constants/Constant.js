@@ -1,4 +1,17 @@
+import { createTheme } from "@mui/material";
 import Content from "../components/Accordions/Content";
+
+export const theme = createTheme({
+  colorSchemes: {
+    dark: true,
+  },
+});
+
+export const lightTheme = createTheme({
+  colorSchemes: {
+    dark: false,
+  },
+});
 
 export const javascriptQuestions =[
     {
