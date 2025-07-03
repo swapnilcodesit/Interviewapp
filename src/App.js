@@ -1,15 +1,14 @@
 import './App.css';
 import Login from './app/Login';
-import Hooks from './pages/Hooks';
+import Home from './pages/Home';
 
 function App() {
-  return (
-    <div className="App">
-      check changes
-      <Login/>
-      <Hooks/>
-    </div>
-  );
+  return <div><Home/></div>
 }
 
 export default App;
+//  <div className="App">
+//       check changes
+//       <Login/>
+//       <Hooks/>
+//     </div>
